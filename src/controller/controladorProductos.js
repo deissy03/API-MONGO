@@ -99,6 +99,6 @@ import ModeloProducto from "../model/modeloProducto.js";
             datos: error,
           });
         }
-      },
- };
+      }
+}
  export default ControladorProductos; 
