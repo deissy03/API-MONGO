@@ -1,5 +1,5 @@
 # PROYECTO -REST API CON EXPRESS Y MONGODB
- ### Cree una APIS con express y mongo, donde  el cliente es postman mandando la solicitud y express en la parte del servidor enviando la petición.
+ ### Cree una APIS con express y mongo, donde  el cliente es postman mandando la solicitud y express en la parte del servidor enviando la petición, la base de datos en mongoBD.
  ### Esta api contiene datos para el E-commerce de productos "bolsos"
 ## Pasos de elaboración:
 
@@ -22,6 +22,10 @@ coloque el enlace de la base de datos que nos proporciona mongobd atlas, estos d
 .env a process.env facilitando la gestión de la configuración de la aplicacción, instalamos morgan con el comando npm i morgan que es un middleware para registar las solicitudes HTTP, lo que proporciona información útil para el desarrollo y depuración, quedando todas estas dependencias habilitadas en el archivo package.json. 
 * 10. Se crea el archivo servidor.js que contiene la lógica necesaria para inicializar el servidor aqui importamos express, morgan y exportamos servidor. Probamos en postman la ruta del servidor
 * 11. Creamos una carpeta a la que llame routes y un archivo de rutaProductos donde creamos las rutas de producto usando los verbos HTTP  get, post, put, delete y confirmamos en postman.
+     * Post: se usa para enviar datos a un servidor, para crear un recurso nuevo.
+     * Get: se utiliza para leer información de un recurso específico.
+     * Put: se utiliza para actualizar un recurso existente en el servidor.
+     * Delete: se emplea para eliminar un recurso específico en el servidor.
 * 12. Para correr el proyecto lo hacemos con el comando : npm run dev para detenerlo lo hacemos con control c.
 * 13. Creamos la carpeta model y un archivo modeloProducto donde creamos  todo el esquema de  nuestras colecciones para que despues sean enviadas a mongo y para poder construir un nuevo esquema.
 * 14. Creamos la carpeta controller y el archivo controladorProductos que se encarga de controlar lo que sucede con los verbos HTTP.
@@ -46,7 +50,6 @@ Aqui encontramos todos los paquetes que necesitamos para nuestra aplicación en 
 * dotenv
 * morgan
 * nodemon
-
 
 
 # AUTORA: @Deisy Esquivia Perez 
